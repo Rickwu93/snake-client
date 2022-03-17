@@ -24,7 +24,7 @@ const handleUserInput = function (key) {
   } else if (key === 's') {
     connection.write('Move: down')
   } else if (key === 'e') {
-    connection.write('Say: GGEZ!')
+    connection.write('Say: GGEZ!') //short message
   }
 
 };

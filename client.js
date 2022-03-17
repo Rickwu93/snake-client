@@ -12,16 +12,13 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log('Connected!');
-
+    conn.write('Name: RW');
   });
 
 
   conn.on("data", (data) => {
     console.log('idled too long')
   });
-
-  
-  
 
   return conn;
 };
